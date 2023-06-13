@@ -14,7 +14,7 @@ Each type of snippets is contained in its own Python (.py) file and is accompani
 
 Here are some of the snippets you will find in this repository:
 
-1. Decorators: A snippet of basic uses of function decorators.
+1. [Decorators](Decorators.py): A snippet of basic uses of function decorators.
 2. ...
 
 ## Contributing
