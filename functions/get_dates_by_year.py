@@ -1,14 +1,14 @@
 from datetime import datetime
 
-from datetime import datetime
-
-def get_date_list(start_year, end_year=None):
+def get_date_list(start_year=1970, end_year=None, break_today=False):
     """
     Returns a list of days in the format year-month-day based on the input starting year and optional end year.
+    The list stops on the actual date if break_now is True.
     
     Args:
     start_year (int): The starting year for the date range.
     end_year (int, optional): The ending year for the date range. If not provided, the current year is used.
+    break_today (bool, optional): If True, the list stops on the actual date. If False, the list includes all days from the last year.
     
     Returns:
     list: A list of dates in the format year-month-day.
@@ -29,9 +29,9 @@ def get_date_list(start_year, end_year=None):
                 days = range(1, 32)
             for day in days:
                 date = datetime(year, month, day)
-                if date > datetime.now():
+                if break_today and date > datetime.now():
                     break
                 date_list.append(f"{year}-{month:02d}-{day:02d}")
     return date_list
 
-print(get_date_list(2015))
+print(get_date_list(2015, None, True))
