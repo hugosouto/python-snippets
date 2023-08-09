@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from datetime import datetime
+
 def get_date_list(start_year, end_year=None):
     """
     Returns a list of days in the format year-month-day based on the input starting year and optional end year.
@@ -26,7 +28,10 @@ def get_date_list(start_year, end_year=None):
             else:
                 days = range(1, 32)
             for day in days:
+                date = datetime(year, month, day)
+                if date > datetime.now():
+                    break
                 date_list.append(f"{year}-{month:02d}-{day:02d}")
     return date_list
 
-get_date_list(2015)
+print(get_date_list(2015))
