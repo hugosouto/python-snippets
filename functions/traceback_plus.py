@@ -29,11 +29,11 @@ def print_exc_plus( ):
     print("Locals by frame, innermost last")
     for frame in stack:
         print()
-        print("Frame %s in %s at line %s") % (frame.f_code.co_name,
-                                              frame.f_code.co_filename,
-                                              frame.f_lineno)
+        print("Frame %s in %s at line %s" % (frame.f_code.co_name,
+                                             frame.f_code.co_filename,
+                                             frame.f_lineno))
         for key, value in frame.f_locals.items():
-            print(r"\t%20s = ") % key,
+            print(r"\t%20s = " % key),
             try:
                 print(value)
             except:
