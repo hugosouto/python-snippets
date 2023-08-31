@@ -5,6 +5,11 @@
 # import sys
 # sys.path.append("D:\\OneDrive\\Documentos\\GitHub\\snippets-python")
 # from functions.traceback_plus import print_exc_plus
+# 
+# try:
+#   any_function(s)
+# except:
+#   print_exc_plus()
 
 import sys, traceback
 
