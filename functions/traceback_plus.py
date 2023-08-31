@@ -1,5 +1,11 @@
 # This code prints a detailed traceback when an exception occurs
 
+# Snippet to use this function:
+# 
+# import sys
+# sys.path.append("D:\\OneDrive\\Documentos\\GitHub\\snippets-python")
+# from functions.traceback_plus import print_exc_plus
+
 import sys, traceback
 
 def print_exc_plus( ):
