@@ -81,17 +81,17 @@ string = 'HelloMyNameIsHugo'
 
 # 3.1. CamelCase to String with Spaces Using For Loops
 
-string_list = list(string)
 new_string = ['']
-for i in string_list:
-    if i.isupper():
-        new_string.append(' ')
-        new_string.append(i)
+for char in string:
+    if char.isupper():
+        new_string.extend([' ', char])
     else:
-        new_string.append(i)
+        new_string.append(char)
 
 new_string = ''.join(new_string)
-if new_string.startswith(' '):
-    new_string = new_string[1:]
+new_string = new_string.lstrip()
     
 print(new_string)
+
+
+# 3.2. CamelCase to String with Spaces Using List Comprehension
