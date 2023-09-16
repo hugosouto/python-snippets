@@ -14,8 +14,8 @@ Each type of snippets is contained in its own Python (.py) file and is accompani
 
 Here are some of the snippets you will find in this repository:
 
-1. [Decorators](Decorators.py): A snippet of basic uses of function decorators.
-2. ...
+1. [Decorators](https://github.com/hugosouto/python-snippets/tree/main/decorators): A snippet of basic uses of function decorators.
+2. [Functions](https://github.com/hugosouto/python-snippets/tree/main/functions): A snippet of basic uses of functions.
 
 ## Contributing
 
