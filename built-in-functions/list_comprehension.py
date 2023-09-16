@@ -25,14 +25,14 @@ for fruit in fruits:
 [print(fruit) for fruit in fruits]
 
 
-# 1.2. Apply upper case
+# 1.2. Change Lower Case to Upper Case
 
-# 1.2.1. Change to upper case using a for loop
+# 1.2.1. Using a for loop
 # for fruit in fruits:
     # fruits[fruits.index(fruit)] = str(fruit).upper()
 # print(fruits)
 
-# 1.2.2. Change to upper case using a list comprehension
+# 1.2.2. Using a list comprehension
 print([str(fruit).upper() for fruit in fruits])
 
 
@@ -74,3 +74,24 @@ print('new_bits_fl_3:', new_bits_fl)
 # 2.2. Change True/False to 0/1 with List Comprehension
 new_bits_lc = [1 if b else 0 for b in bits]
 print('new_bits_lc:', new_bits_lc)
+
+# 3. String Manipulation
+
+string = 'HelloMyNameIsHugo'
+
+# 3.1. CamelCase to String with Spaces Using For Loops
+
+string_list = list(string)
+new_string = ['']
+for i in string_list:
+    if i.isupper():
+        new_string.append(' ')
+        new_string.append(i)
+    else:
+        new_string.append(i)
+
+new_string = ''.join(new_string)
+if new_string.startswith(' '):
+    new_string = new_string[1:]
+    
+print(new_string)
