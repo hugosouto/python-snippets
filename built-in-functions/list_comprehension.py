@@ -77,9 +77,8 @@ print('new_bits_lc:', new_bits_lc)
 
 # 3. String Manipulation
 
-string = 'HelloMyNameIsHugo'
-
 # 3.1. CamelCase to String with Spaces Using For Loops
+string = 'HelloMyNameIsHugo'
 
 new_string = ['']
 for char in string:
@@ -88,10 +87,14 @@ for char in string:
     else:
         new_string.append(char)
 
-new_string = ''.join(new_string)
-new_string = new_string.lstrip()
+new_string = ''.join(new_string).lstrip()
     
 print(new_string)
 
 
 # 3.2. CamelCase to String with Spaces Using List Comprehension
+string = 'HelloMyNameIsHugo'
+new_string = ''.join(
+    [' ' + char if char.isupper() else char for char in string]
+    ).lstrip()
+print(new_string)
