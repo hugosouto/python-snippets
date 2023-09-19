@@ -1,0 +1,3 @@
+eggs = [x for x in range(20)] # a list comprehension
+
+list((x for x in eggs if x % 2 == 0)) # a generator expression
