@@ -29,20 +29,12 @@ def fibonacci():
     b = c
 
 # Iterate through the Fibonacci sequence until a limit is reached
-for num in fibonacci():
-  if num > 50:
-    break
-  print(num)
+if __name__ == '__main__':
+  list = []
+  for num in fibonacci():
+    if num > 5000:
+      break
+    print(num)
+    list.append(num)
 
-
-list = []
-list = list.append(fibonacci())
-print(list)
-
-# def fibonacci():
-#     # Generate first number
-#     a = 1
-#     return a
-
-# while fibonacci() < 200:
-#     print(fibonacci())
+  print(list)
