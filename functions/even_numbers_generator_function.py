@@ -18,7 +18,8 @@ def return_evens(lst):
         if l % 2 == 0:
             yield l
 
-eggs = [x for x in range(20)]
+if __name__ == '__main__':
+    eggs = [x for x in range(20)]
 
-print(list(return_evens(eggs)))
-# Output: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+    print(list(return_evens(eggs)))
+    # Output: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]

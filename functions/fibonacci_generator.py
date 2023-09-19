@@ -33,3 +33,16 @@ for num in fibonacci():
   if num > 50:
     break
   print(num)
+
+
+list = []
+list = list.append(fibonacci())
+print(list)
+
+# def fibonacci():
+#     # Generate first number
+#     a = 1
+#     return a
+
+# while fibonacci() < 200:
+#     print(fibonacci())
